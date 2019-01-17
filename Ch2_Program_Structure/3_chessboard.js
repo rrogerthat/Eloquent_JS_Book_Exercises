@@ -28,7 +28,7 @@ function chessboard(size) {
     while (line <= size) {
         //if a odd line, start pattern with an empty element    
         if (line % 2 !== 0) {
-            let oddChessrow = ("_" + "#").repeat(Math.ceil(size / 2));
+            let oddChessrow = (" " + "#").repeat(Math.ceil(size / 2));
             
             if (size % 2 === 0) {
                 console.log(oddChessrow + "\n");    //newline not really needed 
@@ -38,7 +38,7 @@ function chessboard(size) {
         }   
         //if even line, start pattern with "#" then an empty element 
         else {
-            let evenChessrow = ("#" + "_").repeat(Math.ceil(size / 2));
+            let evenChessrow = ("#" + " ").repeat(Math.ceil(size / 2));
 
             if (size % 2 === 0) {
                 console.log(evenChessrow + "\n");
