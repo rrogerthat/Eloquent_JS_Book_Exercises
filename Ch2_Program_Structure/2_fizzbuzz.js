@@ -6,6 +6,8 @@ For numbers divisible by 3, print "Fizz" instead of the number, and for numbers 
 When you have that working, modify your program to print "FizzBuzz" for numbers that are divisible by 
 both 3 and 5 (and still print "Fizz" or "Buzz" for numbers divisible by only one of those). */
 
+module.exports = 
+
 function fizzBuzz() {
     for (let i = 1; i <= 100; i++) {
         switch (true) {
@@ -23,7 +25,5 @@ function fizzBuzz() {
         }
     }
 }
-
-fizzBuzz();
 
 //used switch case statement instead of a for loop

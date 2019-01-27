@@ -9,14 +9,14 @@ Write a loop that makes seven calls to console.log to output the following trian
 ######
 ####### */
 
-function loopTriangle() {
-    let part = "#";
-    for (let i = 1; i <= 7; i++) {
-        console.log(part);
-        part += "#";
+module.exports = 
+
+function loopTriangle(size) {
+    if (!Number.isInteger(size) || size < 1) return "Input needs to be an integer 1 or greater";
+    let triangle = "";
+    for (let i = "#"; i.length <= size; i += "#") {
+        if (i.length === 1) triangle += i;
+        else triangle += "\n" + i ;
     }
+    return triangle; //use return instead of console.log as its considered a side effect and no value actually gets returned
 }
-
-loopTriangle();
-
-//space complexity can be improved by letting i = "#" and loop stopping when i.length <= 7
