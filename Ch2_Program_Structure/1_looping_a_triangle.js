@@ -20,3 +20,4 @@ function loopTriangle(size) {
     }
     return triangle; //use return instead of console.log as its considered a side effect and no value actually gets returned
 }
+
